@@ -1,0 +1,24 @@
+! ==== LITE ANTI-GAMBLING ADNETWORK FILTER ====
+! Blokira samo reklame, skripte i tracking – ne blokira sajtove.
+
+||trklnks.com^
+||aff1x.com^
+||lnkxt.com^
+||sportads.network^
+||sbaffiliates.com^
+||betaffiliation.com^
+||betadsmedia.net^
+||goaltrk.com^
+||admiraltrk.com^
+||meridiants.com^
+||admiraltrk.net^
+||g4mblify.com^
+||g4mb1t.net^
+||superbetads.com^
+||slotpromo.net^
+||betpromo.io^
+||ads-gambling.net^
+||oddsfeed.io^
+||betoffer.net^
+||casinooffer.org^
+! ==== END ====
