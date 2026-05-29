@@ -1,0 +1,41 @@
+name: Update filter metadata
+
+on:
+  push:
+    paths:
+      - 'balkan.txt'
+      - 'lite.txt'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update Last modified date
+        run: |
+          TODAY=$(date -u +"%Y-%m-%d")
+          for FILE in balkan.txt lite.txt; do
+            sed -i "s/^! Last modified: .*/! Last modified: $TODAY/" "$FILE"
+          done
+
+      - name: Bump patch version
+        run: |
+          for FILE in balkan.txt lite.txt; do
+            CURRENT=$(grep -oP '(?<=! Version: )\d+\.\d+\.\d+' "$FILE")
+            MAJOR=$(echo $CURRENT | cut -d. -f1)
+            MINOR=$(echo $CURRENT | cut -d. -f2)
+            PATCH=$(echo $CURRENT | cut -d. -f3)
+            NEW="$MAJOR.$MINOR.$((PATCH + 1))"
+            sed -i "s/^! Version: .*/! Version: $NEW/" "$FILE"
+          done
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || (git add balkan.txt lite.txt && git commit -m "chore: update metadata [skip ci]")
+          git push

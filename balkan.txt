@@ -1,4 +1,11 @@
 ! ==== BALKAN ANTI-GAMBLING LIST ====
+! Title: Balkan Anti-Gambling List
+! Description: Blokira sajtove kladionica i kazina popularnih na Balkanu
+! Version: 1.1.0
+! Last modified: 2026-05-29
+! Expires: 7 days
+! Homepage: https://github.com/m1l0s/anti-gambling
+!
 ||mozartbet.com^
 ||meridianbet.rs^
 ||meridianbet.com^
@@ -13,4 +20,21 @@
 ||supersport.hr^
 ||germaniasport.hr^
 ||psk.hr^
+||mozzartbet.com^
+||betole.rs^
+||admiral365.com^
+||volcano.rs^
+||sportingbet.rs^
+||goldenbet.rs^
+||bet365.com^
+||unibet.com^
+||betway.com^
+||pinnacle.com^
+||winbet.rs^
+||maxbet.com^
+||betko.com^
+||ladbrokes.com^
+||1xbet.com^
+||22bet.com^
+||bwin.com^
 ! ==== END ====
