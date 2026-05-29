@@ -1,7 +1,7 @@
 ! ==== BALKAN ANTI-GAMBLING LIST ====
 ! Title: Balkan Anti-Gambling List
 ! Description: Blokira sajtove kladionica i kazina popularnih na Balkanu
-! Version: 1.1.0
+! Version: 1.1.1
 ! Last modified: 2026-05-29
 ! Expires: 7 days
 ! Homepage: https://github.com/m1l0s/anti-gambling

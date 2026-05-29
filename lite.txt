@@ -1,7 +1,7 @@
 ! ==== LITE ANTI-GAMBLING ADNETWORK FILTER ====
 ! Title: Lite Anti-Gambling AdNetwork Filter
 ! Description: Blokira samo reklame, skripte i tracking gambling mreža – ne blokira same sajtove
-! Version: 1.1.0
+! Version: 1.1.1
 ! Last modified: 2026-05-29
 ! Expires: 7 days
 ! Homepage: https://github.com/m1l0s/anti-gambling
